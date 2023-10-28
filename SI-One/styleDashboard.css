@@ -1,0 +1,150 @@
+/* SIDEBAR */
+* {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #111827;
+  width: 260px;
+  padding: 24px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.main {
+  height: 100vh;
+  flex-grow: 1;
+}
+
+.sidebar .description-header {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  padding-left: 40px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar .header .list-item {
+  display: flex;
+  width: 212px;
+  padding: 12px 10px;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar .header .illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+}
+
+.sidebar .main .list-item .description {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  height: 1000px;
+}
+
+.sidebar .main .list-item .icon {
+  margin-right: 12px;
+}
+
+.sidebar .main .list-item {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 8px;
+  width: 212px;
+  box-sizing: border-box;
+}
+
+.sidebar .main .list-item:hover {
+  background: #ff9900;
+  transition: all ease-in 0.2s;
+}
+
+.header-content {
+  width: 163vh;
+  height: 80px;
+  background-color: #111827;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  border-right: silver solid;
+}
+
+/* dashboard */
+.dshbrd {
+  padding-top: 25px;
+  padding-left: 25px;
+  color: #fff;
+}
+
+div.isi {
+  width: 600px;
+  height: 1500px;
+  background: white;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+img.ganjar {
+  width: 550px;
+  height: 100%;
+  margin: 25px;
+  margin-top: 10px;
+}
+
+.main-content {
+  background: #f5f5fa;
+}
+
+.labelInformasiGanjar {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-bottom: silver #111827 solid;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+img.BCA {
+  width: 550px;
+  height: 100%;
+  margin: 25px;
+  margin-top: 10px;
+}
+  .labelInformasiBCA {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-bottom: silver #111827 solid;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
