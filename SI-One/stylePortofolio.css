@@ -87,7 +87,7 @@
 }
 
 .header-content {
-  width: 163vh;
+  width: 1200px;
   height: 80px;
   background-color: #111827;
   box-sizing: border-box;
@@ -104,21 +104,19 @@
 
 div.isi {
   width: 600px;
-  height: 1000px;
-  background: white;
   margin: 15px;
   border-radius: 10px;
 }
 
 .card {
   width: 1182px;
-  height: 500px;
-  background-color: #111827;
-  color: #fff;
+  height: 650px;
+  background-color: #f0f0f0;
+  color: black;
   border-radius: 10px;
 }
 
-.labelNilai {
+.label {
   font-size: 20px;
   margin: 15px;
   padding-top: 15px;
@@ -138,12 +136,56 @@ div.isi {
 }
 
 table {
-  width: 1100px;
+  width: 500px;
   height: 100px;
-  text-align: center;
 }
 
 td {
-  border-bottom: silver solid;
   height: 60px;
 }
+
+.pointPorto {
+  color: black;
+}
+
+div.submit {
+  text-align: center;
+}
+
+.card-hasil {
+  width: 1182px;
+  height: 1400px;
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+div.dataDiri {
+  padding-left: 10px;
+}
+
+.atas {
+  background-color: #243e4d;
+  height: 20px;
+  color: white;
+  border: solid black 1px;
+}
+
+.hasilPortoPenalaran {
+  border: solid black 1px;
+  width: 1000px;
+  margin-left: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.cols {
+  border: 1px solid black;
+}
+
+.label-hasil-porto {
+  padding-left: 30px;
+}
+
+

@@ -47,7 +47,6 @@
         </div>
         <button class="modal-button">Click here to login</button>
     </div>
-
     
     <script>
 
@@ -59,11 +58,11 @@
             var password = document.login.password.value;
             password = password.toLowerCase();
             if (username == "admin" && password == "admin") {
-                window.location.href = "/home_admin.html";
+                window.location.href = "home_admin.html";
             }
             
             else if (username == "mahasiswa" && password == "mahasiswa") {
-                window.location.href = "/home_mahasiswa.html";
+                window.location.href = "home_mahasiswa.html";
             }
             else
                 if (done == 0) {

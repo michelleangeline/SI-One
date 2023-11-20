@@ -87,7 +87,7 @@
 }
 
 .header-content {
-  width: 163vh;
+  width: 1200px;
   height: 80px;
   background-color: #111827;
   box-sizing: border-box;
@@ -111,10 +111,11 @@ div.isi {
 }
 
 .card {
-  width: 800px;
+  width: 1182px;
   height: 500px;
-  background-color: #111827;
-  color: #fff;
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 10px;
 }
 
 .labelNilai {
@@ -129,15 +130,33 @@ div.isi {
 }
 
 .card-container {
-  width: 775px;
+  width: 1157px;
   height: 500px;
-  background: red;
   padding-top: 15px;
   padding-left: 25px;
+  border-radius: 10px;
 }
 
-/* .NilaiMahasiswa {
-  width: 400px;
+.NilaiMahasiswa {
+  width: 1100px;
+  height: 350px;
+}
+
+table {
+  width: 1100px;
   height: 300px;
-  background: black;
-} */
+  text-align: center;
+}
+
+td {
+  border-bottom: silver solid;
+}
+
+.IPS {
+  padding: 25px 0px 0px 25px;
+}
+
+td.atas {
+  background-color: #111827;
+  color: #f0f0f0;
+}

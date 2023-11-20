@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SI One</title>
-    <!-- FONTS GOOGLE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styleNilai.css" />
-  </head>
-  <body>
-    <!-- SIDEBAR -->
-    <div class="container">
-      <div class="sidebar">
-        <div class="header">
-          <div class="list-item-atas"></div>
-          <div class="illustration"><img src="src/logo.png"</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SI One</title>
+  <!-- FONTS GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styleNilai.css" />
+  <link rel="icon" href="src/icon1.png" type="image/x-icon" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- SIDEBAR -->
+  <div class="container" >
+    <div class="sidebar">
+      <div class="header">
+        <div class="list-item-atas"></div>
+        <div class="illustration"><img src="src/logo.png">
         </div>
 
         <div class="main">
           <div class="list-item">
             <a href="home_admin.html">
               <img src="src/dashboard.svg" class="icon" />
-              <span class="description">Dashboard</span>
+              <span class="description">News</span>
             </a>
           </div>
 
@@ -61,102 +67,71 @@
           <h1 class="dshbrd">Nilai</h1>
         </div>
       </div>
-      <div class="isi">
-
-        <div class="card">
-          <div class="card-header">
-              <div class="labelNilai">
-                Nilai
+      <!-- Card -->
+      <div class="container2">
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 100%; height: 50%;">
+              <img class="card-img-top" src="src/1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="color: black;">Pengenalan Data Engineering</h5><br>
+                <a href="card_DE.html" class="btn btn-primary">Detail</a>
               </div>
             </div>
-            <div class="card-container">
-                <form>
-                    <select class="tahunAjaran">
-                      <option value="Reguler Ganjil 2023/2024">Reguler Ganjil 2023/2024</option>
-                      <option value="Reguler Genap 2022/2023">Reguler Genap 2022/2023</option>
-                      <option value="Reguler Ganjil 2022/2023">Reguler Ganjil 2022/2023</option>
-                      <option value="Reguler Genap 2021/2022">Reguler Genap 2021/2022</option>
-                      <option value="Reguler Ganjil 2021/2022">Reguler Ganjil 2021/2022</option>
-                    </select>
-                  </form><br/>
-                  Data Nilai
-                  <div class="NilaiMahasiswa">
-                    <Table>
-                      <div class="IPS">
-                        IPS : 4.0
-                      </div>
-                      <tr>
-                        <td>KODE MK</td>
-                        <td>MATA KULIAH</td>
-                        <td>SKS</td>
-                        <td>UTS</td>
-                        <td>UAS</td>
-                        <td>KAT</td>
-                        <td>TOTAL NILAI</td>
-                        <td>NILAI HURUF</td>
-                      </tr>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%; height: 50%;">
+              <img class="card-img-top" src="src/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="color: black;">Sistem Pendukung Keputusan</h5><br>
+                <a href="card_SPK.html" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%; height: 50%;">
+              <img class="card-img-top" src="src/3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="color: black;">Pemograman Berbasis Web</h5><br>
+                <a href="card_Webdas.html" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                      <tr>
-                        <td>BI044</td>
-                        <td>KEWARGANEGARAAN</td>
-                        <td>2</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>A</td>
-                      </tr>
-
-                      <tr>
-                        <td>BI044</td>
-                        <td>KEWARGANEGARAAN</td>
-                        <td>2</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>A</td>
-                      </tr>
-
-                      <tr>
-                        <td>BI044</td>
-                        <td>KEWARGANEGARAAN</td>
-                        <td>2</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>A</td>
-                      </tr>
-
-                      <tr>
-                        <td>BI044</td>
-                        <td>KEWARGANEGARAAN</td>
-                        <td>2</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>A</td>
-                      </tr>
-
-                      <tr>
-                        <td>BI044</td>
-                        <td>KEWARGANEGARAAN</td>
-                        <td>2</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>A</td>
-                      </tr>
-
-                    </Table>
-                  </div>
+      <div class="container2">
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 100%; height: 50%;">
+              <img class="card-img-top" src="src/4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="color: black;">Customer Relationship Management</h5><br>
+                <a href="card_KP.html" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%; height: 50%;">
+              <img class="card-img-top" src="src/5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="color: black;">Kerja Praktek</h5><br>
+                <a href="card_KP.html" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%; height: 50%;">
+              <img class="card-img-top" src="src/1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="color: black;">Object Oriented Program</h5><br>
+                <a href="card_OOP.html" class="btn btn-primary">Detail</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+</body>
+
 </html>

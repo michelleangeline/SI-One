@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styleJadwal.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="icon" href="src/icon1.png" type="image/x-icon"/>
   </head>
   <body>
     <!-- SIDEBAR -->
@@ -26,7 +28,7 @@
           <div class="list-item">
             <a href="home_admin.html">
               <img src="src/dashboard.svg" class="icon" />
-              <span class="description">Dashboard</span>
+              <span class="description">News</span>
             </a>
           </div>
 
@@ -59,112 +61,133 @@
     <div class="main-content">
       <div class="header-content">
         <div class="dasboard-content">
-          <h1 class="dshbrd">Jadwal</h1>
-        </div>
-      </div>
-      <div class="isi">
+          <nav>
+            <h1 class="dshbrd">Jadwal</h1>
+            <img src="src/foto.png" class="user-pic" onclick="toggleMenu()">
+            <div class= "sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="src/foto.png">
+                  <h3>2173011</h3>
+                </div>
+                <hr>
 
-        <div class="card">
-          <div class="card-header">
-              <div class="labelNilai">
-                Jadwal
+                <a href="#" class="sub-menu-link">
+                <img src="src/profile.png">
+                <p>Edit Profile</p>
+                <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                <img src="src/logout.png">
+                <p>Logout</p>
+                <span>></span>
+                </a>
               </div>
             </div>
-            <div class="card-container">
-                <form>
-                    <select class="tahunAjaran">
-                      <option value="Reguler Ganjil 2023/2024">Reguler Ganjil 2023/2024</option>
-                      <option value="Reguler Genap 2022/2023">Reguler Genap 2022/2023</option>
-                      <option value="Reguler Ganjil 2022/2023">Reguler Ganjil 2022/2023</option>
-                      <option value="Reguler Genap 2021/2022">Reguler Genap 2021/2022</option>
-                      <option value="Reguler Ganjil 2021/2022">Reguler Ganjil 2021/2022</option>
-                    </select>
-                  </form><br/>
-                  Jadwal
-                  
-                    <Table>
-                      <tr>
-                        <td>SENIN</td>
-                        <td>MATA KULIAH<br/>
-                        PENGENALAN DATA ENGINEERING</td>
-                        <td>KODE MK<br/>
-                        BIE03</td>
-                        <td>SKS<br/>
-                        3</td>
-                        <td>KELAS<br/>
-                        A</td>
-                        <td>WAKTU<br/>
-                        07:00-09:30</td>
-                        <td>RUANG<br/>
-                        Lab Ent. 2</td>
-                      </tr>
-
-                      <tr>
-                        <td>SELASA</td>
-                        <td>MATA KULIAH<br/>
-                            SISTEM PENDUKUNG KEPUTUSAN</td>
-                        <td>KODE MK<br/>
-                            BI921</td>
-                        <td>SKS<br/>
-                        3</td>
-                        <td>KELAS<br/>
-                        A</td>
-                        <td>WAKTU<br/>
-                        09:31-12:00</td>
-                        <td>RUANG<br/>
-                        Lab Ent. 2</td>
-                      </tr>
-                      <tr>
-                        <td>RABU</td>
-                        <td>MATA KULIAH<br/>
-                            PEMROGRAMAN WEB</td>
-                        <td>KODE MK<br/>
-                            BIE02</td>
-                        <td>SKS<br/>
-                        4</td>
-                        <td>KELAS<br/>
-                        A</td>
-                        <td>WAKTU<br/>
-                            07:00:00 - 09:30:00</td>
-                        <td>RUANG<br/>
-                            Lab Networking</td>
-                      </tr>
-                      <tr>
-                        <td>KAMIS</td>
-                        <td>MATA KULIAH<br/>
-                            KECERDASAN BISNIS</td>
-                        <td>KODE MK<br/>
-                            BIG03</td>
-                        <td>SKS<br/>
-                        3</td>
-                        <td>KELAS<br/>
-                        A</td>
-                        <td>WAKTU<br/>
-                            09:31:00 - 12:00:00</td>
-                        <td>RUANG<br/>
-                        	Lab Prog. 2</td>
-                      </tr>
-                      <tr>
-                        <td>JUMAT</td>
-                        <td>MATA KULIAH<br/>
-                            BAHASA INGGRIS UNTUK BISNIS</td>
-                        <td>KODE MK<br/>
-                            BIE04</td>
-                        <td>SKS<br/>
-                        2</td>
-                        <td>KELAS<br/>
-                        A</td>
-                        <td>WAKTU<br/>
-                            07:00:00 - 09:00:00</td>
-                        <td>RUANG<br/>
-                        Lab Prog. 1</td>
-                      </tr>
-
-                    </Table>
-                  </div>
-                </div>
+          </nav>
         </div>
       </div>
+        <div class="card-container">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+              Semester
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Reguler Ganjil 2023/2024</a>
+              <a class="dropdown-item" href="#">Reguler Genap 2022/2023</a>
+              <a class="dropdown-item" href="#">Reguler Ganjil 2022/2023</a>
+              <a class="dropdown-item" href="#">Reguler Genap 2021/2022</a>
+              <a class="dropdown-item" href="#">Reguler Ganjil 2021/2022</a>
+              <a class="dropdown-item" href="jadwal_admin_insert.html"><Center>+</Center></a>
+            </div>
+          </div>
+          <br>
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">HARI</th>
+                <th scope="col">MATA KULIAH</th>
+                <th scope="col">KODE MK</th>
+                <th scope="col">SKS</th>
+                <th scope="col">KELAS</th>
+                <th scope="col">WAKTU</th>
+                <th scope="col">RUANG</th>
+                <th scope="col">ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">SENIN</th>
+                <td>PENGENALAN DATA ENGINEERING</td>
+                <td>BIE03</td>
+                <td>3</td>
+                <td>A</td>
+                <td>07:00-09:30</td>
+                <td>Lab Ent. 2</td>
+                <td>
+                  <button type="button" class="btn btn-warning">EDIT</button>
+                  <button type="button" class="btn btn-danger">DELETE</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">SELASA</th>
+                <td>SISTEM PENDUKUNG KEPUTUSAN</td>
+                <td>BIE03</td>
+                <td>3</td>
+                <td>A</td>
+                <td>15:30-17:30</td>
+                <td>Lab Ent. 2</td>
+                <td>
+                  <button type="button" class="btn btn-warning">EDIT</button>
+                  <button type="button" class="btn btn-danger">DELETE</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">RABU</th>
+                <td>PEMROGRAMAN BERBASIS WEB</td>
+                <td>BIE03</td>
+                <td>3</td>
+                <td>A</td>
+                <td>12:30-15:00</td>
+                <td>Lab Ent. 2</td>
+                <td>
+                  <button type="button" class="btn btn-warning">EDIT</button>
+                  <button type="button" class="btn btn-danger">DELETE</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">KAMIS</th>
+                <td>CUSTOMER RELATIONSHIP MANAGEMENT</td>
+                <td>BIE03</td>
+                <td>3</td>
+                <td>A</td>
+                <td>17:00-19:30</td>
+                <td>Lab Ent. 2</td>
+                <td>
+                  <button type="button" class="btn btn-warning">EDIT</button>
+                  <button type="button" class="btn btn-danger">DELETE</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">JUMAT</th>
+                <td>KERJA PRAKTEK</td>
+                <td>BIE03</td>
+                <td>3</td>
+                <td>A</td>
+                <td>09:00-12:00</td>
+                <td>Lab Ent. 2</td>
+                <td>
+                  <button type="button" class="btn btn-warning">EDIT</button>
+                  <button type="button" class="btn btn-danger">DELETE</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
     </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>
 </html>
